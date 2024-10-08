@@ -32,6 +32,6 @@
     "marks-pane": "^1.0.7",
     "path-webpack": "0.0.3",
     "stream-browserify": "^2.0.1",
-    "xmldom": "^0.1.27"
+    "@xmldom/xmldom": "^0.8.4"
   }
 }

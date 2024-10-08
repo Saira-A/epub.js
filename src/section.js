@@ -95,7 +95,8 @@ class Section {
 				var isIE = userAgent.indexOf('Trident') >= 0;
 				var Serializer;
 				if (typeof XMLSerializer === "undefined" || isIE) {
-					Serializer = require("xmldom/dom-parser").XMLSerializer;
+					const { XMLSerializer } = require("@xmldom/xmldom");
+					Serializer = XMLSerializer;
 				} else {
 					Serializer = XMLSerializer;
 				}
